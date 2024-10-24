@@ -1,0 +1,78 @@
+*{
+    font: "Cantarell Regular 11";
+}
+
+window {
+    background-color: #4B5844;
+    border: 1px 0px 0px 1px;
+    border-color: #7A8B71;
+    width: 40%;
+    children: [mainbox];
+}
+
+mainbox {
+    background-color: #4B5844;
+    padding: 10px 5px;
+    border: 0px 1px 1px 0px;
+    border-color: black;
+    children: [textbox-custom, stupid-listview, stupid-inputbar];
+    
+}
+
+stupid-listview {
+    border: 0px 1px 1px 0px;
+    border-color: #7A8B71;
+    children: [listview];
+}
+
+stupid-inputbar {
+    margin: 2px 0px 0px 0px;
+    background-color: inherit;
+    border: 0px 1px 1px 0px;
+    border-color: #7A8B71;
+    expand: false;    
+    children: [inputbar];
+}
+
+textbox-custom{
+    text-color: white;
+    background-color: inherit;
+    expand: false;
+    vertical-align: 0;
+    content: "Run Application";
+}
+
+inputbar, listview, element-text, prompt, entry {
+    background-color: #3E4637;
+    text-color: white;
+    font: "Helvetica-converted Regular 11";
+}
+
+inputbar {
+    border: 1px 0px 0px 1px;
+    border-color: black;
+    children: [entry];
+}
+
+listview {
+    padding: 1px 0px 0px 0px;
+    border: 1px 0px 0px 1px;
+    border-color: black;
+    margin: 0px;
+    lines: 15;
+}
+
+element {
+    background-color: inherit;
+    padding: 1px 0px 0px 2px;
+}
+
+entry {
+    padding: 0px 0px 0px 2px;
+}
+
+element-text .selected {
+    background-color: #978730;
+}
+
+
